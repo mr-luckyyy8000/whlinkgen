@@ -66,7 +66,7 @@
           placeholder="Enter message"
         ></textarea> -->
 
-        <button class="submt" id="generate-link" onclick="sendWhatsApp()">
+        <button class="submit" id="generate-link" onclick="sendWhatsApp()">
           Generate link
         </button>
         <!-- <a id="whatsapp-link" href="#">WhatsApp link</a> -->
@@ -75,20 +75,9 @@
         <p>© 2023 Mr.luckyy Inc.</p>
       </div>
     </div>
-    <!-- <h1>WhatsApp Link Generator</h1>
-    <label for="phone">Phone number:</label>
-    <input type="text" id="phone" placeholder="Enter phone number" />
-    <label for="message">Message:</label>
-    <input type="text" id="message" placeholder="Enter message" />
-    <button onclick="sendWhatsApp()">Send via WhatsApp</button> -->
-
     <script>
       function generateWhatsAppLink(number, message, vehicle, date, pre) {
-        // remove all non-numeric characters from the number
         number = number.replace(/\D/g, "");
-        // make sure the number starts with 'whatsapp:' prefix
-        // number = "whatsapp:" + number;
-        // encode the message to be part of the URL
         message = encodeURIComponent(message);
         vehicle = encodeURIComponent(vehicle);
         date = encodeURIComponent(date);
